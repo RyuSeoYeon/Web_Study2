@@ -1,0 +1,19 @@
+table{
+	border: 2px solid blue;
+	border-radius: 15px;
+	width: 600px;
+	hight: 170px;
+	margin: auto;
+	text-align: center;
+}
+	th {
+		border: 3px solid cyan;
+		border-radius: 30px;
+		background-color: #e239f6;
+		color: white;
+	}
+	
+	td{
+		border: 3px solid cyan;
+		border-radius: 30px;
+	}
