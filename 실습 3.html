@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> 실습 #3 </title>
+    </head>
+    
+    <body>
+        <p align="center">
+            <input type="button" onclick="ji()" value="클릭시 실행"/>
+        </p>
+    </body>
+    <script>
+        function ji(){
+            var a = prompt("몇단??");
+            alert(a+"단을 입력하셨습니다.");
+            
+            document.write("<span style='border: 2px solid blue; padding: 6px; width: 100%'>")
+			
+				for(i=1; i<10; i++){
+					final=a*i
+            document.write("<span style='border: 3px dashed red; margin:2px;'>" + a + "x" + i + "=" + final + "\n" + "</span>");
+            }
+            
+			document.write("</span>")
+        }   
+    </script>
+</html>

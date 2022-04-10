@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title> 실습 #2 </title>
+	</head>
+	<body>
+		<p align="center">
+			<input type="button" onclick="jj()" value="클릭시 실행"/>
+		</p>
+	</body>
+</html>
+
+<script>
+	function jj(){
+		var a = prompt("숫자입력");
+		var b = prompt("숫자입력");
+		var c = prompt("숫자입력");
+		alert("1번째 입력 값: " + a + "\n2번째 입력 값: "+ b +"\n3번째 입력 값: " + c);
+		
+		if(a<b){
+			if(b<c){
+				max=c;
+			}else {
+				max=b;
+			}
+		}else if(b<a) {
+			if(a<c) {
+				max=c;
+			}else {
+				max=a;
+			}
+		}else if(b<c){
+			if(c<a) {
+				max=a;
+			}else {
+				max=c;
+			}
+		}else if(c<b){
+			if(b<a){
+				max=a;
+			}else {
+				max=b;
+			}
+		}else if(c<a){
+			if(a<b){
+				max=b;
+			}else {
+				max=a;
+			}
+		}else{
+			if(c<b){
+				max=b;
+			}else {
+				max=c;
+			}
+		}
+		document.write("입력한 수: "+ a + "\n" + b + "\n" + c + "<br>", "가장 큰 수: "+ max);
+	}
+</script>
+		
